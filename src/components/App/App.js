@@ -12,15 +12,9 @@ class App extends Component {
   }
 
   render() {
+    const starListItemArray = this.state.starList.map((star, i) => <li key={i}>{star}</li>);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-
-        <p>{this.state.starList}</p>
-      </div>
+        <ul>{starListItemArray}</ul>
     );
   }
 }
