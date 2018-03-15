@@ -18,23 +18,11 @@ class App extends Component {
   }
 
   render() {
-    // function objectToStarName(eachStarObject){
-    //   return eachStarObject.name;
-    // }
-    // function objectToStarDiameter(eachStarObject){
-    //   return eachStarObject.diameter;
-    // }
-    // starNameArray.forEach(star => {
-    //   const newName = objectToStarName(star);
-    // })
-    // starDiameterArray.forEach(star => {
-    //   const newDiameter = objectToStarDiameter(star);
-    // })
+
     // const starListItemArray = this.state.starList.map((star, i) => <li key={i}>{star}</li>);
     return (
          <div>
-         {this.state.starList.map((starList, i) => <p key={i}>{starList.name} has a diameter of {starList.diameter}</p>)}
-
+         {this.state.starList.map((star, i) => <p key={i}>{star.name} has a diameter of {star.diameter}</p>)}
          </div>
     );
   }
