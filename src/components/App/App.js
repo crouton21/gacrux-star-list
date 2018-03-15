@@ -22,7 +22,8 @@ class App extends Component {
     // const starListItemArray = this.state.starList.map((star, i) => <li key={i}>{star}</li>);
     return (
          <div>
-         {this.state.starList.map((star, i) => <p key={i}>{star.name} has a diameter of {star.diameter}</p>)}
+         {this.state.starList.map((star, i) => <p key={i}>The star {star.name} 
+         has a diameter of {star.diameter} million kilometers.</p>)}
          </div>
     );
   }
